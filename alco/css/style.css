@@ -1,0 +1,348 @@
+
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNova.otf") format("truetype");
+  
+}
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Bold.otf") format("truetype");
+  
+}
+@font-face {
+  font-family: 'BERLINGSKESERIF-DBD';
+  src: url("../fonts/BERLINGSKESERIF-DBD.TTF") format("truetype");
+  
+}
+
+* { box-sizing: border-box;
+
+}
+body {
+  margin: 0;
+  padding: 5px;
+  background-color: #ffffff;
+  font-family: 'ProximaNova', sans-serif;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'BERLINGSKESERIF-DBD', serif;
+}
+a {
+  font-family: 'ProximaNova-Bold', sans-serif;
+}
+p {
+  font-size: 20px;
+  line-height: 30px;
+}
+main {
+  overflow: hidden;
+}
+.list-flex {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+  display: flex;
+  
+}
+li {
+  margin-right: 25px;
+}
+li:last-child {
+  margin-right: 0px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  max-width: 1025px;
+  padding: 0 10px 0 10px;
+  width: 100%;
+  margin: auto;
+}
+.btn  {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #f84d4d;
+  text-transform: uppercase;
+  line-height: 34px;
+  padding: 14px 40px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+
+}
+h1 {
+  visibility: hidden;
+  display: none;
+}
+h2 {
+  font-size: 54px;
+  line-height: 67px;
+}
+h3 {
+  font-size: 38px;
+  line-height: 48px;
+}
+header .container {
+  border: solid 1px #3d3e3b;
+  max-width: 1140px;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 34px;
+  
+}
+.logo span {
+  color: #f84d4d;
+}
+header {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  color: #ffffff;
+  z-index: 1;
+  left:0;
+  padding: 0 10px 0 10px;
+}
+.container .logo a {
+  font-size: 18px;
+  line-height: 34px;
+}
+.container .connection a:first-child {
+  font-size: 18px;
+  line-height: 34px;
+}
+.container .logo div {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+
+.connection .fast-travel {
+  color: red;
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: dotted 1px;
+  
+}
+.connection a:first-child {
+  display: block;
+}
+.main-section {
+  
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: #ffffff;
+  background-size: cover;
+
+  position: relative;
+
+}
+.main-wrap {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.click {
+  background-color: #ffffff;
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 42px);
+  box-shadow: 0px 8px 27px 0px rgba(142, 164, 184, 0.2);
+  bottom: -42px;
+}
+.main-wrap-inner {
+  max-width: 890px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.main-wrap-inner p {
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0;
+  padding-bottom: 60px;
+}
+.main-wrap-inner small {
+  display: block;
+  font-size: 14px;
+  line-height: 34px;
+  padding-top: 30px;
+
+}
+.main-wrap-inner h2 {
+  padding-top: 230px; 
+  margin: 0;
+  padding-bottom: 35px;
+}
+.third-section {
+  background-color: #f2f5f8;
+  padding-top: 180px;
+  padding-bottom: 150px;
+  position: relative;
+}
+.third-section .wrapper {
+  max-width: 700px;
+}
+.third-wrap h3 {
+  max-width: 525px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  padding-bottom: 40px;
+}
+.third-wrap {
+  position: relative;
+}
+.third-wrap p {
+margin-top: 0;
+margin-bottom: 0px;
+padding-bottom: 40px;
+}
+.buy-stoking small {
+  margin-left: 20px;
+}
+
+.wine-bottle  {
+  position: absolute;
+  top: -155px;
+  right: 0px;
+}
+.wine-bottle::before {
+  content: "";
+  background-image: url(../img/line.png);
+  display:block;
+  width: 262px;
+  height: 43px;
+  position: absolute;
+  bottom: 340px;
+  left: -165px;
+  background-repeat: repeat;
+  animation: loh 4s linear infinite;
+}
+@keyframes loh {
+  0 { background-position-x: 0; }
+  
+  
+  100% {
+    background-position-x: 262px;
+  }
+}
+.advantages-section .container {
+  max-height: 825px;
+  margin: auto;
+  width: 100%;
+}
+.advantages-section .advantages {
+  
+  padding-top: 140px;
+  padding-bottom: 180px;
+  text-align: center;
+  
+}
+.advantages-section .advantages h3 {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  
+}
+.advantages-section .advantages a {
+  margin-top: 105px;
+
+}
+
+.advantages ul {
+  justify-content: center;
+  
+}
+
+.advantages ul p {
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 220px;
+ 
+ 
+}
+.advantages ul li {
+  margin-right: 140px;
+}
+.advantages ul li:last-child {
+  margin-right: 0px;
+}
+.expression .container {
+  max-height: 755px;
+  width: 100%;
+}
+.expression .expression-wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 170px;
+}
+.expression .expression-wrapper {
+  
+  padding-bottom: 110px;
+  margin-left: 60px;
+}
+.expression .expression-wrapper  p {
+  margin: 0;
+  max-width: 520px;
+  padding-left: 50px;
+  position: relative;
+
+}
+.expression-wrapper p::before {
+  content: "";
+  display: block;
+  height: 23px;
+  width: 32px;
+  background-image: url(/lesson/alco/img/coma.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.expression .expression-wrapper h3 {
+  margin: 0;
+  margin-bottom: 40px;
+}
+.profit {
+  background-image: url(/lesson/alco/img/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+.profit .container {
+  max-height: 545px;
+  width: 100%;
+}
+.profit .profit-wrap {
+  text-align: center;
+  padding: 150px 0 120px 0;
+
+}
+.profit .profit-wrap h2 {
+  max-width: 620px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.profit .profit-wrap p {
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
