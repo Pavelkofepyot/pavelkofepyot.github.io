@@ -1,0 +1,153 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+* { box-sizing: border-box;
+}
+h1 {
+  visibility: hidden;
+  display: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1480px;
+  width: 100%;
+  margin: auto;
+  padding: 0 20px 0 20px;
+} 
+.btn {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 35px 0 35px;
+  border: none;
+  outline: none;
+  background-color: #1B99B4;
+  border-radius: 30px 5px 30px 5px;
+  cursor: pointer;
+  transition: all 0.25s linear;
+}
+.btn:hover {
+ border-radius: 5px 30px 5px 30px;
+ 
+}
+/*Глобальные стили окончены */
+
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.navigation {
+  display: flex;
+  justify-content: right;
+}
+ .main-section {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 1330px;
+  color: #fff;
+  padding: 276px 0 40px 0;
+  position: relative;
+  background-position-y: bottom;
+}
+.main-wrapp {
+  max-width: 637px;
+  width: 100%;
+  position: relative;
+}
+header {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.bg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.solutions {
+  min-height: 970px;
+  outline: 1px solid;
+  position: relative;
+}
+.solutions::before {
+  content: "";
+  transform: rotate(-7.63deg);
+  position: absolute;
+  top: -125px;
+  left: -50%;
+  right: -50%;
+  height: 250px;
+  background-color: rgb(226, 19, 181);
+  
+}
+.solutions::after {
+  content: "";
+  transform: rotate(-7.63deg);
+  position: absolute;
+  bottom: -125px;
+  left: -50%;
+  right: -50%;
+  height: 250px;
+  background-color: rgb(226, 19, 181);
+}
+.solutions .container {
+  position: relative;
+  outline: 1px solid;
+}
+.answer ul {
+  display: flex;
+  
+}
+.answer li {
+  display: flex;
+  align-items: center;
+}
+.choose {
+  position: relative;
+}
+.terms .btn {
+  padding: 0 96px 0 96px;
+}
+
+/* Медиа выражения ВСЕГДА ВНИЗУ!!*/
+
+
+
+
+@media screen and (max-width: 1600px) {
+  .main-section {
+    min-height: 800px;
+  }
+  .bg {
+    height: 80%;
+    background-position-y: bottom;
+  }
+
+
+}
