@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Фигма</title>
   <link rel="stylesheet" href="css/style.css">
+  
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
   <header>
@@ -179,29 +182,37 @@
       <div class="container">
         <div class="team-wrapp">
           <h3>Executive Team & Board</h3>
-            <div class="broad">
-              <ul>
-                <li>
+            <div class="sl">
+              
+                <div class="sl-slide">
                   <img src="img/maskgroup.png" alt="marc">
+                  <div class="sl-text">
                   <h4>Marco Streng</h4>
                   <span>Founder</span>
-                </li>
-                <li>
+                </div>
+                </div>
+                <div class="sl-slide">
                   <img src="img/askroup.png" alt="ask">
+                  <div class="sl-text">
                   <h4>Andrey Kim</h4>
                   <span>Founder</span>
-                </li>
-                <li>
+                </div>
+              </div>
+                <div class="sl-slide">
                   <img src="img/mark.png" alt="mark">
+                  <div class="sl-text">
                   <h4>Marco Krohn</h4>
                   <span>Founder</span>
-                </li>
-                <li>  
+                </div>
+                </div>
+                <div class="sl-slide">  
                   <img src="img/groupa.png" alt="rashid">
+                  <div class="sl-text">
                   <h4>Rashit Makhat</h4>
                   <span>Founder</span>
-                </li>
-              </ul>
+                </div>
+                </div>
+              
             </div>
         </div>
       </div>
@@ -286,5 +297,15 @@
       </div>
     </section>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js?<?=time()?>"></script>
+  <script>
+    $(function() {
+        alert('Подключена последняя версия jQuery через CDN');
+    });
+    
+</script>
+<script src="slick/slick.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>
