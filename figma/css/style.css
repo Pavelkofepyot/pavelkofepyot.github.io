@@ -38,6 +38,43 @@ ul {
   margin: 0;
   padding: 0;
 }
+svg {
+  transition: fill .25s linear;
+}
+textarea {
+  resize: none;
+  height: 117px;
+}
+input {
+  outline: none;
+  border-radius: 8px;
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+  height: 60px;
+  transition: all 0.3s linear;
+  padding: 17px 502px 18px 20px;
+}
+input:active {
+  background-color: #ffffff;
+  border-color: #000000;
+}
+input:focus {
+  background-color:#ffffff;
+  border-color:#000000;
+}
+textarea {
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+  transition: all 0.3s linear;
+}
+textarea:active {
+  background-color: #ffffff;
+  border-color: #000000;
+}
+textarea:focus {
+  background-color:#ffffff;
+  border-color:#000000;
+}
 .container {
   max-width: 1480px;
   width: 100%;
@@ -360,8 +397,114 @@ justify-content: space-around;
   line-height: 160%;
   color: #1DB5D6;
 }
-.container .team-wrapp .sl .slick-initialized .slick-slider button {
-  
+.responsibility-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 230px 0 310px 0;
+  background-color: #181F22;
+  color: #ffffff;
+}
+.responsibility-wrapp h3 {
+  width: 400px;
+}
+.responsibility-wrapp h3::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #fff;
+  background-image: url(../img/border.png);
+  margin-bottom: 26px;
+}
+.we ul li {
+ display: flex;
+ align-items: center;
+ width: 400px;
+ margin-top: 100px;
+}
+.we ul li:first-child {
+  margin-top: 0;
+}
+.we ul li p {
+  margin-left: 80px;
+}
+.info .section {
+  padding: 300px 0 70px 0;
+}
+.info-wrapp {
+  display: flex;
+  justify-content: space-around;
+}
+.info-wrapp .left h3 {
+  line-height: 120%;
+  margin-bottom: 55px;
+}
+.info-wrapp .left h3::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 8px;
+  background-color: #fff;
+  background-image: url(../img/border.png);
+  margin-bottom: 26px;
+}
+.fast {
+  margin-bottom: 65px;
+}
+.fast p {
+  margin-bottom: 25px;
+  font-size: 24px;
+  max-width: 480px;
+}
+.social a {
+border: 1px solid #181F22;
+padding: 20px;
+border-radius: 20px;
+}
+.social {
+  display: flex;
+}
+
+.social p a:hover {
+  border-color: #1DB5D6;
+}
+svg:hover {
+  fill: #1DB5D6;
+}
+.social p {
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+.feisbook {
+  margin: 0 35px 0 35px;
+}
+.feisbook a {
+padding: 20px 25px;
+}
+.contact h4 {
+  margin-bottom: 30px;
+  line-height: 160%;
+}
+.contact p {
+  display: grid;
+  margin-bottom: 35px;
+}
+.contact p:last-child {
+  margin-bottom: 40px;
+}
+.contact span {
+  margin-bottom: 10px;
+  font-weight: lighter;
+}
+.terms {
+  display: flex;
+  align-items: center;
+}
+.terms p {
+  margin-left: 40px;
+  max-width: 280px;
+  font-weight: lighter;
 }
 
 
